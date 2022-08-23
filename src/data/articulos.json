@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Play Station 3",
+        "valor": "100.000",
+        "color": "Negro"
+    },
+    {
+        "nombre": "Play Station 4",
+        "valor": "150.000",
+        "color": "Blanco"
+    },
+    {
+        "nombre": "Play Station 4",
+        "valor": "120.000",
+        "color": "Negro"
+    },
+    {
+        "nombre": "Play Station 5",
+        "valor": "250.000",
+        "color": "Blanco"
+    }
+]
