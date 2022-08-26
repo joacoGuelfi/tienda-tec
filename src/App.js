@@ -1,16 +1,11 @@
-import articulos from './data/articulos.json';
+import NavBar from './components/NavBar';
+import './styles/style.css'
+
+
 const App = () => {
   return (
     <div className="App">
-      {
-        articulos.map(articulo => (
-          <div>
-            <p>Nombre: {articulo.nombre}</p>
-            <p>Color: {articulo.color}</p>
-            <p>Precio: ${articulo.valor}</p>
-          </div>
-        ))
-      }
+      <NavBar />
     </div>
 
   );

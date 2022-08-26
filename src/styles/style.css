@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ESTILO PARA EL NAVBAR*/
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(165, 157, 157);
+}
+
+/* ESTILO LOGO */
+.logo {
+    width: 200px;
+}
+
+/* ESTILO BOTONES ( PRODUCTOS, PROMOS, NOSOTROS ) */
+.sections {
+    display: flex;
+    list-style-type: none;
+}
+
+.sections a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+
+/* FOTO CARRITO FUTURO BOTON*/
+.carrito {
+    width: 40px;
+}
+
+/*BUSCADOR DE ITEMS CON BOTON DE LUPA */
+.buscador {
+    display: flex;
+    align-items: center;
+}
+
+.buscador img {
+    width: 25px;
+    margin-right: 5px;
+}
