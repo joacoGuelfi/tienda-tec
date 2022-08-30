@@ -4,17 +4,21 @@ body {
 }
 
 /* ESTILO PARA EL NAVBAR*/
-.navBar {
+nav {
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    align-content: center;
     align-items: center;
     justify-content: space-around;
     background-color: rgb(165, 157, 157);
 }
 
+
+
 /* ESTILO LOGO */
 .logo {
     width: 200px;
+    padding: 20px;
 }
 
 /* ESTILO BOTONES ( PRODUCTOS, PROMOS, NOSOTROS ) */
