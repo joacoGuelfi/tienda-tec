@@ -4,7 +4,7 @@ body {
 }
 
 /* ESTILO PARA EL NAVBAR*/
-nav {
+.navBar {
     width: 100%;
     display: flex;
     align-content: center;
@@ -13,6 +13,10 @@ nav {
     background-color: rgb(165, 157, 157);
 }
 
+.navBar nav {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 /* ESTILO LOGO */
@@ -47,4 +51,19 @@ nav {
 .buscador img {
     width: 25px;
     margin-right: 5px;
+}
+
+/* ESTILO AL CONTADOR */
+.contadorBox {
+    border: solid 1px black;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.contadorBox button {
+    margin: 5px;
+    width: 40px;
 }
