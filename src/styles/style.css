@@ -67,3 +67,27 @@ body {
     margin: 5px;
     width: 40px;
 }
+
+/* ESTILO A LAS CARDS DE ARTICULOS*/
+.cardArticulos {
+    display: flex;
+}
+
+.cardArticulos li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+    width: 200px;
+    height: 300px;
+}
+
+.cardArticulos img {
+    border: 1px solid black;
+    width: 70%;
+    height: 50%;
+}
