@@ -2,9 +2,7 @@ import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import './styles/style.css'
 import { CartWidget } from './components/CartWidget';
-import Contador from './components/Contador';
-import Item from './components/Item';
-import foto from "./assets/blazer.jpeg"
+import Fetch from "./components/Fetch"
 
 const App = () => {
   return (
@@ -13,8 +11,8 @@ const App = () => {
         <CartWidget />
       </NavBar>
       <ItemListContainer greatings={"Welcome !"} />
-      <Contador />
-      <Item fotos={foto} />
+      <Fetch />
+
     </div>
 
   );

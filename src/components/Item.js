@@ -1,8 +1,9 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { getItem } from '../app/getItem';
+import ItemDetail from './ItemDetail';
 
-export const Item = ({ fotos }) => {
+export const Item = () => {
     const [i, setI] = useState([]);
 
     useEffect(() => {
@@ -16,9 +17,9 @@ export const Item = ({ fotos }) => {
             {
                 i.map((articulos, i) => <li key={i}>
                     <h2>{articulos.producto} </h2>
-                    <img src={fotos} alt="" />
-                    <div className='marca'> {articulos.marca}</div>
-                    <div className='precio'> {articulos.precio}</div>
+                    <img src="" alt="IMG" />
+                    <button>Ver detalle del producto</button>
+                    <ItemDetail item={articulos} />
                 </li>)
             }
 

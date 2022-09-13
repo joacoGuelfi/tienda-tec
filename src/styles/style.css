@@ -56,11 +56,11 @@ body {
 /* ESTILO AL CONTADOR */
 .contadorBox {
     border: solid 1px black;
-    width: 20%;
+    width: 70%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    margin-left: 50px;
 }
 
 .contadorBox button {
@@ -83,10 +83,40 @@ body {
     margin: 20px;
     padding: 5px;
     width: 200px;
-    height: 300px;
+    height: fit-content;
 }
 
 .cardArticulos img {
+    border: 1px solid black;
+    width: 70%;
+    height: 50%;
+}
+
+.itemDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CHARACTER CARDS STYLE */
+.characterCard {
+    display: flex;
+}
+
+.characterCard li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 5px;
+    width: 200px;
+    height: 300px;
+}
+
+.characterCard img {
     border: 1px solid black;
     width: 70%;
     height: 50%;
