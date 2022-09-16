@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
 import { getItem } from '../app/getItem';
-import ItemDetail from './ItemDetail';
+import { Link } from 'react-router-dom';
 
 export const Item = () => {
     const [i, setI] = useState([]);
@@ -9,21 +9,23 @@ export const Item = () => {
     useEffect(() => {
         getItem().then((articulos) => {
             setI(articulos)
+            console.log(articulos)
         })
     }, [])
+
     return (
 
-        <div className='cardArticulos'>
+        <div className='cardArticulos' >
             {
                 i.map((articulos, i) => <li key={i}>
                     <h2>{articulos.producto} </h2>
-                    <img src="" alt="IMG" />
-                    <button>Ver detalle del producto</button>
-                    <ItemDetail item={articulos} />
+                    <img src={articulos.foto} alt="IMG" />
+                    <button> <Link to={`/product/${articulos}`}>See More </Link> </button>
                 </li>)
             }
 
-        </div>
+        </div >
+
     )
 
 

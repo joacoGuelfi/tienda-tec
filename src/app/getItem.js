@@ -15,7 +15,8 @@ export const getItem = () => {
                     talle: "M",
                     precio: 2000,
                     marca: "La Josefina",
-                    foto: { fotoCamisa }
+                    foto: { fotoCamisa },
+                    categorie: "camisas"
 
                 },
                 {
@@ -25,7 +26,8 @@ export const getItem = () => {
                     talle: "L",
                     precio: 1500,
                     marca: "La Josefina",
-                    foto: { fotoBlazer }
+                    foto: { fotoBlazer },
+                    categorie: "abrigo"
                 },
 
                 {
@@ -35,7 +37,8 @@ export const getItem = () => {
                     talle: "36",
                     precio: 5000,
                     marca: "Levis",
-                    foto: { fotoJean }
+                    foto: { fotoJean },
+                    categorie: "pantalones"
                 },
             ])
 

@@ -92,11 +92,6 @@ body {
     height: 50%;
 }
 
-.itemDetail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* CHARACTER CARDS STYLE */
 .characterCard {
