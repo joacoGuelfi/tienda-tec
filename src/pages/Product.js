@@ -1,26 +1,29 @@
-import ItemDetailContainer from "../components/ItemDetailContainer"
 import { useParams } from "react-router-dom"
-import { getItem } from "../app/getItem"
-import { useEffect } from "react"
+import Contador from "../components/Contador"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 const Product = () => {
-    const { id } = useParams()
-    const [i, setI] = useState([]);
-
-    useEffect(() => {
-        getItem().then((articulos) => {
-            setI(articulos)
-        })
-
-    }, [])
-
+    const [count, setCount] = useState(0)
+    const { id, name, marca, talle, precio } = useParams()
     return (
-        <div>
+        <div className="productDetails" >
+
+            <h1 > {name} </h1 >
+            <h2>{marca}</h2>
+            <img src="" alt="IMG" />
+            <p>Talle: {talle}</p>
+            <p>Precio: {precio}</p>
             {
-                <h1>{id.producto}</h1>
+                count === 0 ?
+                    <Contador onAdd={(valor) => {
+                        setCount(valor);
+                    }} />
+                    :
+                    <Link to={`/cart`}>Terminar Compra</Link>
             }
-        </div>
+
+        </div >
     )
 }
 

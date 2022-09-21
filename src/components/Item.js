@@ -20,7 +20,7 @@ export const Item = () => {
                 i.map((articulos, i) => <li key={i}>
                     <h2>{articulos.producto} </h2>
                     <img src={articulos.foto} alt="IMG" />
-                    <button> <Link to={`/product/${articulos.id}`}>See More </Link> </button>
+                    <button> <Link to={`/product/${articulos.id}/${articulos.name}/${articulos.marca}/${articulos.talle}/${articulos.precio}`}>See More </Link> </button>
                 </li>)
             }
 

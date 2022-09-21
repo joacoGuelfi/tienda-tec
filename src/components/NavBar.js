@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const NavBar = ({ children }) => {
+
     return (
         <div className="navBar">
             <Link to="/"><img className='logo' src={fotoLogo} alt="logo" /></Link>
@@ -12,16 +13,21 @@ const NavBar = ({ children }) => {
                 <input type="text" placeholder="Busca una prenda" />
             </div>
             <ul className="sections">
-                <nav>
-                    <li><Link to="/">Home</Link>  </li>
-                    <li><Link to="/categories/camisas">Camisas</Link> </li>
-                    <li><Link to="/categories/pantalones">Pantalones</Link> </li>
-                    <li><Link to="/categories/abrigos">Abrigos</Link> </li>
-                </nav>
+                {
+
+                    <nav>
+                        <li><Link to="/">Home</Link>  </li>
+                        <li><Link to={`/categories/${"camisas"}`}>Camisas</Link> </li>
+                        <li><Link to="/categories/pantalones">Pantalones</Link> </li>
+                        <li><Link to="/categories/abrigos">Abrigos</Link> </li>
+                    </nav>
+
+                }
+
             </ul>
             {children}
         </div>
     );
 }
 
-export default NavBar; 
+export default NavBar;
