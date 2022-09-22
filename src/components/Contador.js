@@ -1,9 +1,12 @@
 import { useState } from 'react'
+import { AppContext } from "../app/Provider"
+import { useContext } from "react"
 
 const Contador = ({ onAdd }) => {
     const [valor, setValor] = useState(0)
     const sumar = () => setValor(valor + 1)
     const restar = () => setValor(valor > 0 ? valor - 1 : valor)
+    const [state, setState] = useContext(AppContext)
     return (
         <div>
             <div className='contadorBox'>
@@ -14,7 +17,7 @@ const Contador = ({ onAdd }) => {
                 <button onClick={sumar}>+</button>
             </div>
             <div>
-                <button onClick={onAdd}>Agregar al Carrito</button>
+                <button onClick={e => { setState(valor); onAdd(valor) }}>Agregar al Carrito</button>
             </div>
         </div>
     )
